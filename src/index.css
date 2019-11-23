@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@font-face {
+  font-family: 'Buffalo';
+  src: local(Buffalo-Regular), url(./fonts/buffalo-regular-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: local(Lato-Regular), url(./fonts/Lato-Regular.ttf);
+}
