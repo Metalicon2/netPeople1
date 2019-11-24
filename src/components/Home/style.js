@@ -7,6 +7,8 @@ import shape2 from './img/shape2.PNG';
 import shape3 from './img/shape3.PNG';
 import shape4 from './img/shape4.PNG';
 import shape5 from './img/paypal.PNG';
+import shape6 from './img/papa.png';
+import shape7 from './img/mama.png';
 
 export const FirstBox = styled.div`
     width: 100%;
@@ -35,6 +37,12 @@ export const Title2 = styled(Title)`
     color: black;
     font-weight: 300;
     padding: 50px 0;
+`
+
+export const Title3 = styled(Title)`
+    color: #faaf48;
+    text-align: center;
+    margin: 50px 0 35px 0;
 `
 
 export const Text = styled.p`
@@ -80,6 +88,11 @@ export const CardContainer = styled.div`
     justify-content: center;
 `
 
+export const CardContainer2 = styled(CardContainer)`
+    height: 520px;
+    padding: 0 40px;
+`
+
 export const Card = styled.div`
     width: 270px;
     height: 260px;
@@ -91,6 +104,17 @@ export const Card = styled.div`
     transition: all .4s ease-in-out;
     &:hover { border-radius:50%; }
     box-shadow: 14px -11px 17px -12px rgba(0,0,0,0.4);
+`
+
+export const Card2 = styled.div`
+    width: 270px;
+    height: 520px;
+    background-color: #f7f7f7
+    margin: 40px 40px 0 40px;
+    box-shadow: 14px -11px 17px -12px rgba(0,0,0,0.4);
+    padding: 0 30px;
+    transition: all .4s ease-in-out;
+    &:hover { border-radius: 15%}
 `
 
 export const CardImage1 = styled.img.attrs({
@@ -121,6 +145,20 @@ export const CardImage4 = styled.img.attrs({
     margin: 35px 0;
 `
 
+export const CardImage5 = styled.img.attrs({
+    src: shape6
+})`
+    height: 210px;
+    margin: 35px 0;
+`
+
+export const CardImage6 = styled.img.attrs({
+    src: shape7
+})`
+    height: 210px;
+    margin: 35px 0;
+`
+
 export const CardTitle = styled.p`
     font-family: Lato-Bold;
     font-size: 16px;
@@ -129,6 +167,16 @@ export const CardTitle = styled.p`
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.28px;
+`
+
+export const CardTextWrapper = styled.div`
+    height: 150px;
+    overflow: scroll;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        height: 200px;
+        background-color: white;
+    }
 `
 
 export const CardText = styled.p`
@@ -141,6 +189,16 @@ export const CardText = styled.p`
     letter-spacing: normal;
     color: #7f7f7f;
     margin: 10px 0;
+`
+
+export const CardText2 = styled(CardText)`
+    font-family: Lora-Italic;
+    font-style: italic;
+    line-height: 1.71;
+    color: #404040;
+    &:hover {
+        font-weight: bold;
+    }
 `
 
 export const Footer = styled.div`
@@ -182,4 +240,6 @@ export const PayPal = styled.img.attrs({
     vertical-align: middle;
 `
 
-
+export const ThirdBox = styled.div`
+    height: 800px;
+`

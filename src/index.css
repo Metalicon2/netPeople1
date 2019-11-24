@@ -36,3 +36,8 @@ code {
   font-family: 'Lato-Bold';
   src: local(Lato-Bold), url(./fonts/Lato-Bold.ttf);
 }
+
+@font-face {
+  font-family: 'Lora-Italic';
+  src: local(Lora-Italic), url(./fonts/Lora-Italic.ttf);
+}

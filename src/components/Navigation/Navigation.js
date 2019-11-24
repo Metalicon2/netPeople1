@@ -13,11 +13,11 @@ const Navigation = () => {
         <Logo>
           {//Itt ciklikusan a LogoTitle sztringből generálom a betű komponenseket azért, hogy a hover-nél random szín jelenhessen meg mindegyikre (felesleges és giccses de menő)
             LogoTitle.split('').map((item, index) => {
-              return (item === '-' || (item === 's' && index >= 12) ? <LogoText alt={index} hyphen color={randomColor()}>{item}</LogoText>
+              return (item === '-' || (item === 's' && index >= 12) ? <LogoText key={index} hyphen color={randomColor()}>{item}</LogoText>
               :
-              (index >= 5 ? <LogoText alt={index} grey color={randomColor()}>{item}</LogoText>
+              (index >= 5 ? <LogoText key={index} grey color={randomColor()}>{item}</LogoText>
               :
-              <LogoText alt={index} color={randomColor()}>{item}</LogoText>))
+              <LogoText key={index} color={randomColor()}>{item}</LogoText>))
             })
           }
         </Logo>

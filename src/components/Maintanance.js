@@ -6,7 +6,7 @@ import {
 const Maintanance= ({pageName}) => {
     return (
         <div className='flex flex-column'>
-            <p className='tc'>The <p className='dib b'>{pageName}</p> page is under development...</p>
+            <div className='tc'>The <p className='dib b'>{pageName}</p> page is under development...</div>
             <Wave className='pa3 center'size={50}/>
         </div>
     );

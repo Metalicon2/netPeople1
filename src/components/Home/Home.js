@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {FirstBox, Title, Text, Newspaper, SecondBox, Title2, CardContainer, Card,
-CardImage1, CardImage2, CardImage3, CardImage4, CardTitle, CardText, Footer, UList, ListItem, PayPal} from './style.js';
+import {FirstBox, Title, Text, Newspaper, SecondBox, Title2, Title3, CardContainer, Card, ThirdBox, CardContainer2, Card2, CardTextWrapper, CardText2,
+CardImage1, CardImage2, CardImage3, CardImage4, CardImage5, CardImage6, CardTitle, CardText, Footer, UList, ListItem, PayPal} from './style.js';
 
 const Home = () => {
 
@@ -24,6 +24,31 @@ const Home = () => {
                     <Card><CardImage4/><CardTitle>Akár 2 nap múlva nálad</CardTitle><CardText>Nem baj, ha sürgős. Rendels SOS verziót, és 2 nap múlva kézhez kapod az újságot.</CardText></Card>
                 </CardContainer>
             </SecondBox>
+            <ThirdBox>
+                <Title3>Make your (ünnepeltedet) Thrilled!</Title3>
+                <CardContainer2>
+                    <Card2><CardImage5/>
+                    <CardTextWrapper>
+                        <CardText2>"Kedves "Meglepkék" szombaton rendeltünk Nálatok egy 12 oldalas újságot 40. születésnapra, tegnap este átadtuk az ünnepeltnek. Azt leírni nem tudom, 
+                            hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
+                        </CardText2>
+                    </CardTextWrapper>
+                    </Card2>
+                    <Card2><CardImage6/>
+                    <CardTextWrapper>
+                        <CardText2>"Kedves "Meglepkék" szombaton rendeltünk Nálatok egy 12 oldalas újságot 40. születésnapra, tegnap este átadtuk az ünnepeltnek. Azt leírni nem tudom, 
+                            hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
+                        </CardText2>
+                    </CardTextWrapper></Card2>
+                    <Card2><CardImage5/>
+                    <CardTextWrapper>
+                        <CardText2>"Kedves "Meglepkék" szombaton rendeltünk Nálatok egy 12 oldalas újságot 40. születésnapra, tegnap este átadtuk az ünnepeltnek. Azt leírni nem tudom, 
+                            hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
+                        </CardText2>
+                    </CardTextWrapper>
+                    </Card2>
+                </CardContainer2>
+            </ThirdBox>
             <Footer>
                 <UList>
                     <ListItem>CUSTOMER SERVICE</ListItem>

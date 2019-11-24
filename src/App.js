@@ -8,7 +8,8 @@ import Contact from './components/Contact/Contact.js';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 
 const App = () => {
@@ -16,7 +17,10 @@ const App = () => {
     <Router>
         <Navigation/>
       <Switch>
-        <Route path="/home">
+        <Route exact path="/" render={() => (
+          <Redirect to="/home"/>
+        )}/>
+        <Route exact path="/home">
           <Home/>
         </Route>
         <Route path="/order">
