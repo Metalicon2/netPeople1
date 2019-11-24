@@ -1,8 +1,40 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {FirstBox, Title, Text, Newspaper, SecondBox, Title2, CardContainer, Card,
+CardImage1, CardImage2, CardImage3, CardImage4, CardTitle, CardText, Footer, UList, ListItem, PayPal} from './style.js';
 
 const Home = () => {
+
+    const [date, setDate] = useState(null);
+    const [selectedDate, setSelectedDate] = useState('2012-11-15');
+
     return (
-        <h1> Home </h1>
+        <div>
+            <FirstBox>
+                <Title>The Best Birthday Gift</Title>
+                <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur accumsan congue fermentum. Praesent lobortis massa turpis, sit amet placerat metus sollicitudin eget.
+                </Text>
+                <Newspaper></Newspaper>
+            </FirstBox>
+            <SecondBox>
+                <Title2>This gift makes everybody cry.</Title2>
+                <CardContainer>
+                    <Card><CardImage1/><CardTitle>Aznapi újság, amikor Ő született</CardTitle><CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </CardText></Card>
+                    <Card><CardImage2/><CardTitle>Egyedi cikk és kép</CardTitle><CardText>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </CardText></Card>
+                    <Card><CardImage3/><CardTitle>Válaszd ki, mi legyen az alap újság</CardTitle><CardText>100+ újság közül választhatod ki azt, ami a legközelebb áll az ajándékozotthoz.</CardText></Card>
+                    <Card><CardImage4/><CardTitle>Akár 2 nap múlva nálad</CardTitle><CardText>Nem baj, ha sürgős. Rendels SOS verziót, és 2 nap múlva kézhez kapod az újságot.</CardText></Card>
+                </CardContainer>
+            </SecondBox>
+            <Footer>
+                <UList>
+                    <ListItem>CUSTOMER SERVICE</ListItem>
+                    <ListItem>FAQ</ListItem>
+                    <ListItem>PRIVACY POLICY</ListItem>
+                    <ListItem>HOW TO ORDER</ListItem>
+                    <ListItem>BLOG</ListItem>
+                    <ListItem paypal><PayPal/></ListItem>
+                </UList>
+            </Footer>
+        </div>
     );
 }
 

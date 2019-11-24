@@ -21,3 +21,18 @@ code {
   font-family: 'Lato';
   src: local(Lato-Regular), url(./fonts/Lato-Regular.ttf);
 }
+
+@font-face {
+  font-family: 'Merriweather';
+  src: local(Merriweather-Bold), url(./fonts/Merriweather-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Lato-Light';
+  src: local(Lato-Light), url(./fonts/Lato-Light.ttf);
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: local(Lato-Bold), url(./fonts/Lato-Bold.ttf);
+}

@@ -1,23 +1,25 @@
 import styled from 'styled-components';
 
 export const NavigationBar = styled.div`
-    margin: 5px 0;
+    padding: 5px 0;
     overflow: hidden;
     background: white;
     position: relative;
-    border-bottom: 1px solid black;
-    @media only screen and (max-width: 600px) {
-          background: pink;
-    }
 `
 
 export const Logo = styled.div`
-    width: 30%;
+    width: 35%;
     float: left;
     text-align: right;
+    @media only screen and (max-width: 1300px) {
+        width: 35%;
+    }
+    @media only screen and (max-width: 940px) {
+        width: 70%;
+    }
 `
 
-export const LogoText = styled.h2`
+export const LogoText = styled.div`
     display: inline-block;
     cursor: pointer;
     color: ${props => props.hyphen ? '#d56c2c' : (props.grey ? '#979797' : 'black')}
@@ -29,12 +31,21 @@ export const LogoText = styled.h2`
     font-style: normal;
     line-height: normal;
     letter-spacing: 2.93px;
+    &:hover{
+        color: ${props => props.color};
+    }
 `
 
 export const List = styled.div`
     width: 40%;
     float: left;
     text-align: center;
+    @media only screen and (max-width: 1300px) {
+        width: 60%;
+    }
+    @media only screen and (max-width: 940px) {
+        display: none;
+    }
 `
 
 export const UList = styled.ul`
@@ -70,9 +81,12 @@ export const ListItem = styled.li`
 `
 
 export const ButtonContainer = styled.div`
-    width: 30%;
+    width: 25%;
     float: left;
     margin: 10px 0;
+    @media only screen and (max-width: 1300px) {
+        display: none;
+    }
 `
 
 export const Button = styled.button`
