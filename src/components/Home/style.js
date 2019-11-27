@@ -9,6 +9,7 @@ import shape4 from './img/shape4.PNG';
 import shape5 from './img/paypal.PNG';
 import shape6 from './img/papa.png';
 import shape7 from './img/mama.png';
+import heart from './img/shape.png';
 
 export const FirstBox = styled.div`
     width: 100%;
@@ -172,11 +173,37 @@ export const CardTitle = styled.p`
 export const CardTextWrapper = styled.div`
     height: 150px;
     overflow: scroll;
+    overflow-x: hidden;
     transition: all 0.4s ease-in-out;
     &:hover {
         height: 200px;
         background-color: white;
     }
+`
+
+export const HeartWrapper = styled.div`
+    ${CardTextWrapper}:hover + & {
+        display: none;
+    }
+`
+
+export const Heart = styled.img.attrs({
+    src: heart
+})`
+    height: 23px;
+    margin: 25px 5px 0 0;
+    transition: 0.3s ease-in-out;
+    opacity: 0.7;
+    &: hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+`
+
+export const Name = styled.p`
+    display: inline-block;
+    padding-left: 5px;
+    font-family: Lora-Italic;
 `
 
 export const CardText = styled.p`

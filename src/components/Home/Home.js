@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {FirstBox, Title, Text, Newspaper, SecondBox, Title2, Title3, CardContainer, Card, ThirdBox, CardContainer2, Card2, CardTextWrapper, CardText2,
-CardImage1, CardImage2, CardImage3, CardImage4, CardImage5, CardImage6, CardTitle, CardText, Footer, UList, ListItem, PayPal} from './style.js';
+CardImage1, CardImage2, CardImage3, CardImage4, CardImage5, CardImage6, CardTitle, CardText, Footer, UList, ListItem, PayPal, Heart, HeartWrapper, Name} from './style.js';
 import Calendar from './Calendar.js';
 
 const Home = () => {
@@ -30,19 +30,32 @@ const Home = () => {
                             hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
                         </CardText2>
                     </CardTextWrapper>
+                    <HeartWrapper>
+                        <Heart/><Heart/><Heart/><Heart/><Heart/>
+                        <Name>Zsuzsa</Name>
+                    </HeartWrapper>
                     </Card2>
                     <Card2><CardImage6/>
                     <CardTextWrapper>
                         <CardText2>"Kedves "Meglepkék" szombaton rendeltünk Nálatok egy 12 oldalas újságot 40. születésnapra, tegnap este átadtuk az ünnepeltnek. Azt leírni nem tudom, 
                             hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
                         </CardText2>
-                    </CardTextWrapper></Card2>
+                    </CardTextWrapper>
+                    <HeartWrapper>
+                        <Heart/><Heart/><Heart/><Heart/><Heart/>
+                        <Name>Zsuzsa</Name>
+                    </HeartWrapper>
+                    </Card2>
                     <Card2><CardImage5/>
                     <CardTextWrapper>
                         <CardText2>"Kedves "Meglepkék" szombaton rendeltünk Nálatok egy 12 oldalas újságot 40. születésnapra, tegnap este átadtuk az ünnepeltnek. Azt leírni nem tudom, 
                             hogy milyen hatással volt rá, de az öröm, a meglepetés óriási volt, ezúton szeretném megköszönni odafigyelő, gyors hozzáállásotokat és az ÖRÖK emlék újságot." 
                         </CardText2>
                     </CardTextWrapper>
+                    <HeartWrapper>
+                        <Heart/><Heart/><Heart/><Heart/><Heart/>
+                        <Name>Zsuzsa</Name>
+                    </HeartWrapper>
                     </Card2>
                 </CardContainer2>
             </ThirdBox>
