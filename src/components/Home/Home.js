@@ -1,12 +1,9 @@
 import React, {useState} from 'react';
 import {FirstBox, Title, Text, Newspaper, SecondBox, Title2, Title3, CardContainer, Card, ThirdBox, CardContainer2, Card2, CardTextWrapper, CardText2,
 CardImage1, CardImage2, CardImage3, CardImage4, CardImage5, CardImage6, CardTitle, CardText, Footer, UList, ListItem, PayPal} from './style.js';
+import Calendar from './Calendar.js';
 
 const Home = () => {
-
-    const [date, setDate] = useState(null);
-    const [selectedDate, setSelectedDate] = useState('2012-11-15');
-
     return (
         <div>
             <FirstBox>
@@ -49,6 +46,7 @@ const Home = () => {
                     </Card2>
                 </CardContainer2>
             </ThirdBox>
+            <Calendar />
             <Footer>
                 <UList>
                     <ListItem>CUSTOMER SERVICE</ListItem>

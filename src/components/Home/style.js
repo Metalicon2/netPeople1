@@ -243,3 +243,30 @@ export const PayPal = styled.img.attrs({
 export const ThirdBox = styled.div`
     height: 800px;
 `
+
+export const DateDiv = styled.div`
+    height: 300px;
+    background-image: linear-gradient(to right, #2f466c 50%, #426399);
+`
+
+export const DateTitle = styled.h1`
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 900;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.17;
+    letter-spacing: normal;
+    color: #ffffff;
+`
+
+export const DateText = styled.p`
+    font-family: Lato;
+    font-size: 17px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.76;
+    letter-spacing: normal;
+    color: #ffffff;
+`

@@ -6,6 +6,8 @@
     "better-react-spinkit": "^2.0.4",
     "randomcolor": "^0.5.4",
     "react": "^16.12.0",
+    "react-datepicker": "^2.10.1",
+    "react-day-picker": "^7.4.0",
     "react-dom": "^16.12.0",
     "react-dropdown-date": "0.0.18",
     "react-router": "^5.1.2",
